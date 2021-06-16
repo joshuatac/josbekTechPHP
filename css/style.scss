@@ -1,0 +1,289 @@
+#register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #590a5b;
+    overflow: hidden;
+    .wrapper {
+        background: #fff;
+        width: 450px !important;
+        box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    }
+
+    .form {
+        padding: 25px 30px;
+
+        header {
+            font-size: 1.2rem;
+            padding-bottom: 0.6rem;
+            font-weight: 600;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        form {
+            .button {
+                input {
+                    margin-top: 0.87rem;
+                    height: 2.3rem;
+                    border: none;
+                    font-size: 1.03rem;
+                    font-weight: 400;
+                    background: #333;
+                    color: #fff;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    text-transform: capitalize;
+                }
+            }
+            .image {
+                input {
+                    font-size: 1.01rem;
+
+                }
+            }
+            margin: 1.2rem 0;
+            .name-details {
+                display: flex;
+            }
+
+
+            .name-details .field:first-child {
+                margin-right: 0.6rem;
+            }
+
+            .name-details .field:last-child {
+                margin-left: 0.6rem;
+            }
+
+            .error-txt {
+                color: #721c24;
+                background: #f8d7da;
+                padding: 0.5rem 0.6rem;
+                text-align: center;
+                border-radius: 0.3rem;
+                margin-bottom: 0.5rem;
+                border: 1px solid #f5c6cb;
+            }
+
+            .field {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 0.5rem;
+                i {
+                    position: absolute;
+                    right: 1rem;
+                    color: #ccc;
+                    top: 70%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                }
+
+                i.active::before {
+                    color: #333;
+                    content: "\f070";
+                }
+                label {
+                    margin-bottom: 2px;
+                    color: #333333;
+                    font-weight: 300;
+                }
+
+            }
+
+            .input {
+
+                input {
+                    outline: none;
+                    height: 2rem;
+                    width: 95%;
+                    font-size: 1rem;
+                    border: 1px solid #ccc;
+                    padding: 0 10px;
+
+                }
+            }
+        }
+    }
+    .form {
+        .link {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1rem;
+            a {
+                font-weight: 600;
+                color: #333;
+            }
+            a:hover {
+                font-weight: 100;
+            }
+        }
+    }
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.mt-2 {
+    margin-top: 2rem !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    color: #590a5b;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #590a5b;
+    height: 50px;
+    color: #ffffff;
+
+    a {
+        margin-left: 1rem;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+
+    .logo h1 {
+        color: #ffffff;
+    }
+}
+
+
+#success {
+    background: #590a5b !important;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loginSuccess {
+    h1 {
+        font-weight: bold;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        color: lightgreen !important;
+    }
+
+}
+
+
+.successImg {
+    max-width: 20rem;
+}
+
+.proceedWrapper {
+
+    max-width: 100%;
+    padding-top: 5rem;
+    .proceed {
+        background: #ffffff;
+        padding: 1rem;
+        border-radius: 10px !important;
+        color: #590a5b !important;
+        box-shadow: 5px 5px 3px #aaa;
+        font-weight: bold;
+
+    }
+    .proceed:hover,
+    a:hover {
+        background: #590a5b;
+        color: #ffffff !important;
+        border: 1px solid #ffffff;
+
+    }
+}
+
+
+
+// Login Styling
+.wrapper {
+    .login {
+        .button{
+            input{
+                color: #ffffff !important;
+                background: #590a5b;
+                font-weight: 300;
+                border: none;
+            }
+
+            input:hover{
+                background: #fff;
+                border: 1px solid #590a5b;
+                color: #590a5b !important;
+                font-weight: 400;
+            }
+        
+        }
+        .field {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0.5rem;
+
+            i{
+                position: absolute;
+                right: 1rem;
+                color: #ccc;
+                top: 62%;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+            label {
+                margin-bottom: 0.3rem;
+            }
+            input {
+                width: 100%;
+                height: 2.5rem;
+                outline: none;
+                padding: 0 1rem;
+                margin-bottom: 0.7rem;
+            }
+
+        }
+    }
+}
+
+
+@media(max-width:480px) {
+    .loginWrapper {
+        height: 30rem;
+    }
+}
